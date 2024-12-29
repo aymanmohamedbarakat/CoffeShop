@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+:root {
+    --primary-color: #493628;
+    --secondary-color: #AB886D;
+    --text-color-primary: #E4E0E1;
+    --text-color-secondary: #D6C0B3;
+}
+
+
+.navbar {
+    background-color: transparent !important;
+    position: relative;
+    z-index: 2; /* Higher z-index to ensure navbar and offcanvas stay on top */
+}
+
+.navbar-brand {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: 600;
+}
+
+.navbar-toggler{
+    color: var(--text-color-primary);
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav-link {
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    padding: 0.5rem clamp(0.5rem, 2vw, 1rem) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.dropdown-menu {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-outline-info {
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--secondary-color) !important;
+    border: none !important;
+    outline: none !important;
+    color: var(--text-color-primary)
+}
+
+@media (max-width: 991.98px) {
+    .offcanvas {
+        max-width: 300px;
+        z-index: 55555; /* Even higher z-index than navbar */
+    }
+} 
+
+.header {
+    background-image: url(../image/coffe\ image.webp);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    border-radius: clamp(1rem, 2vw, 1.5625rem);
+    position: relative;
+    z-index: 1;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004d;
+    border-radius: clamp(1rem, 2vw, 1.5625rem); 
+}
+
+.content-header {
+    text-align: center;
+    z-index:1;
+}
+
+.content-header h1 {
+    font-size: clamp(1rem, 5vw, 3rem);
+    line-height: 1.2;
+    font-weight: bold;
+    color: var(--text-color-primary);
+
+}
+
+.content-header p {
+    font-size: clamp(.1rem, 2vw, 1.1rem);
+    line-height: 1.6;
+    color: var(--text-color-secondary);
+    font-weight: bold;
+}
+
+
+
+.service-title{
+    position: relative;
+    padding: 115px 0 35px 0;
+}
+.service-title::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100px;
+    margin-left: 1px;
+    background: var(--primary-color);
+
+}
+
+.service-title h4{
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.service-title h1{
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.2;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.service-icon{
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    color: var(--primary-color);
+    background: var(--text-color-primary);
+
+}
+.img-1{
+ background-color: #f0ebdf;
+}
+
+.coffe-menu{
+    position: relative;
+    padding: 115px 0 35px 0;
+}
+.coffe-menu::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100px;
+    margin-left: 1px;
+    background: var(--primary-color);
+
+}
+
+footer{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+h1 , p{
+color: var(--primary-color);
+}    
+.copyright {
+    color: var(--primary-color);
+}
+
+.copyright a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bolder;
+}
